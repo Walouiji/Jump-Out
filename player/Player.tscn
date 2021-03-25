@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://player/player.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 32 )
+
+[sub_resource type="Gradient" id=2]
+colors = PoolColorArray( 1, 0, 0, 1, 1, 0.964706, 0, 1 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 16, 32 )
+shape = SubResource( 1 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 23.4703, 61.6162 )
+rotation = 0.0745343
+scale = Vector2( 3, 3 )
+amount = 100
+lifetime = 5.0
+speed_scale = 2.5
+fract_delta = false
+emission_shape = 1
+emission_sphere_radius = 1.0
+gravity = Vector2( -98, 0 )
+initial_velocity = 5.0
+linear_accel = -79.03
+linear_accel_random = 0.75
+radial_accel = 10.0
+damping = 29.03
+color_ramp = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 32.0
+margin_bottom = 64.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
