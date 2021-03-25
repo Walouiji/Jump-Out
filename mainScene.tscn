@@ -18,7 +18,6 @@ var rnd = RandomNumberGenerator.new()
 func _on_Timer_timeout():
 	add_child(one.instance())
 	$Timer.wait_time = rand_range(0, 5.5)
-	print($Timer.wait_time)
 	randomize()
 "
 

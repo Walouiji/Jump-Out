@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="beautiful game"
+config/name="Jump-out"
 run/main_scene="res://mainScene.tscn"
 config/icon="res://icon.png"
 
