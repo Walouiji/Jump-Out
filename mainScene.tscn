@@ -53,7 +53,6 @@ autostart = true
 script = ExtResource( 3 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-visible = false
 motion_mirroring = Vector2( 1024, 0 )
 
 [node name="parallax" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
